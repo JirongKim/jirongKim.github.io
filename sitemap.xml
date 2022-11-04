@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>yscriuf.github.io/themes/hugo-card/examplesite/content/posts/documentation/</loc>
+    <loc>/themes/hugo-card/examplesite/content/posts/documentation/</loc>
     <lastmod>2022-11-05T04:07:50+09:00</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2022-11-05T04:07:50+09:00</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/themes/</loc>
+    <loc>/themes/</loc>
     <lastmod>2022-11-05T04:07:50+09:00</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2016-06-13T10:51:47+05:30</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/categories/one/</loc>
+    <loc>/categories/one/</loc>
     <lastmod>2016-06-13T10:51:47+05:30</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2016-06-13T10:51:47+05:30</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/categories/two/</loc>
+    <loc>/categories/two/</loc>
     <lastmod>2016-06-13T10:51:47+05:30</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/posts/welcome-to-hugo/</loc>
+    <loc>/posts/welcome-to-hugo/</loc>
     <lastmod>2016-06-13T10:51:47+05:30</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/posts/usage/</loc>
+    <loc>/posts/usage/</loc>
     <lastmod>2016-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/posts/no-image/</loc>
+    <loc>/posts/no-image/</loc>
     <lastmod>2016-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/posts/installation/</loc>
+    <loc>/posts/installation/</loc>
     <lastmod>2016-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/tags/tag_c/</loc>
+    <loc>/tags/tag_c/</loc>
     <lastmod>2016-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2016-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/posts/elements/</loc>
+    <loc>/posts/elements/</loc>
     <lastmod>2016-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/tags/tag_a/</loc>
+    <loc>/tags/tag_a/</loc>
     <lastmod>2016-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/posts/documentation/</loc>
+    <loc>/posts/documentation/</loc>
     <lastmod>2016-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>yscriuf.github.io/tags/tag_b/</loc>
+    <loc>/tags/tag_b/</loc>
     <lastmod>2016-03-09T00:00:00+00:00</lastmod>
   </url>
 </urlset>
