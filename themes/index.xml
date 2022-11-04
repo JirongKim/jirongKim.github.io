@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Themes on JIHYUN KIM</title>
-    <link>/themes/</link>
+    <link>https://yscriuf.github.io/themes/</link>
     <description>Recent content in Themes on JIHYUN KIM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Nov 2022 04:07:50 +0900</lastBuildDate><atom:link href="/themes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Nov 2022 04:07:50 +0900</lastBuildDate><atom:link href="https://yscriuf.github.io/themes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Documentation</title>
-      <link>/themes/hugo-card/examplesite/content/posts/documentation/</link>
+      <link>https://yscriuf.github.io/themes/hugo-card/examplesite/content/posts/documentation/</link>
       <pubDate>Sat, 05 Nov 2022 04:07:50 +0900</pubDate>
       
-      <guid>/themes/hugo-card/examplesite/content/posts/documentation/</guid>
+      <guid>https://yscriuf.github.io/themes/hugo-card/examplesite/content/posts/documentation/</guid>
       <description></description>
     </item>
     
