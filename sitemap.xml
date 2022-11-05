@@ -3,56 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-05T17:30:24+09:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-05T17:30:24+09:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-05T17:30:24+09:00</lastmod>
   </url><url>
     <loc>/tags/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/</loc>
-    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-05T17:30:24+09:00</lastmod>
   </url><url>
     <loc>/posts/network-overall/</loc>
-    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2016-06-13T10:51:47+05:30</lastmod>
-  </url><url>
-    <loc>/categories/one/</loc>
-    <lastmod>2016-06-13T10:51:47+05:30</lastmod>
-  </url><url>
-    <loc>/categories/two/</loc>
-    <lastmod>2016-06-13T10:51:47+05:30</lastmod>
-  </url><url>
-    <loc>/posts/welcome-to-hugo/</loc>
-    <lastmod>2016-06-13T10:51:47+05:30</lastmod>
-  </url><url>
-    <loc>/posts/usage/</loc>
-    <lastmod>2016-06-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/no-image/</loc>
-    <lastmod>2016-06-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/elements/</loc>
-    <lastmod>2016-04-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/tag_a/</loc>
-    <lastmod>2016-04-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/tag_c/</loc>
-    <lastmod>2016-04-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/documentation/</loc>
-    <lastmod>2016-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/tag_b/</loc>
-    <lastmod>2016-03-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-05T17:30:24+09:00</lastmod>
   </url><url>
     <loc>/pages/about/</loc>
   </url><url>
-    <loc>/pages/contact/</loc>
+    <loc>/categories/</loc>
   </url><url>
     <loc>/pages/</loc>
   </url>

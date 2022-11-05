@@ -12,20 +12,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/pages/about/</guid>
-      <description>Hugo cards is a Bootstrap based theme ported from the Jekyll theme Webjeda-cards. Any Bootstrap element can be used in the theme.
-For more themes, visit Hugo Themes
-Does the theme deserve a star?
-Star</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>/pages/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/pages/contact/</guid>
-      <description>Visit my site
-Insert your contact details or a contact form here.</description>
+      <description>안녕하세요 김지현입니다 :)
+사용자에게 편리한 서비스를 제공해주는 과정에서 큰 보람을 느낍니다.
+현재는 서버 및 인프라 학습에 매진하고 있습니다.
+이력 부스트캠프 웹풀스택 7기 (2022.07 ~ 현재) 삼성전자 생활가전 Software Quality Engineer (2018.03 ~ 2022.07) </description>
     </item>
     
   </channel>
