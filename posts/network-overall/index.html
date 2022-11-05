@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>네트워크의 전반적인 내용들을 디테일하게 살펴보자 - JIHYUN KIM</title>
+<meta name="description" content="네트워크는 여러 개의 네트워크 기기를 기반으로 구축된다.
+계층별 네트워크 기기에는 아래와 같은 종류가 있다.
+애플리케이션 계층 : L7 스위치 인터넷 계층 : 라우터, L3 스위치 데이터 링크 계층 : L2 스위치, 브리지 물리 계층 : NIC, 리피터, AP 상위 계층의 네트워크 기기는 하위 계층을 처리할 수 있다.
+예를 들어 L7 스위치는 모든 계층을 처리할 수 있지만, AP는 물리 계층만 처리할 수 있다.
+네트워크 기기로 구성된 네트워크 위의 사진을 통해 네트워크가 어떻게 구성되어 있는지 살펴보자."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/network-overall/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="네트워크는 여러 개의 네트워크 기기를 기반으로 구축된다.
+계층별 네트워크 기기에는 아래와 같은 종류가 있다.
+애플리케이션 계층 : L7 스위치 인터넷 계층 : 라우터, L3 스위치 데이터 링크 계층 : L2 스위치, 브리지 물리 계층 : NIC, 리피터, AP 상위 계층의 네트워크 기기는 하위 계층을 처리할 수 있다.
+예를 들어 L7 스위치는 모든 계층을 처리할 수 있지만, AP는 물리 계층만 처리할 수 있다.
+네트워크 기기로 구성된 네트워크 위의 사진을 통해 네트워크가 어떻게 구성되어 있는지 살펴보자." />
+<meta name="twitter:title" content="네트워크의 전반적인 내용들을 디테일하게 살펴보자 - JIHYUN KIM" />
+<meta name="twitter:site" content="http://twitter.com/bul_ikana" />
+<meta name="twitter:creator" content="http://twitter.com/bul_ikana" />
+
+
+<meta property="og:type" content="article" />
+<meta content="네트워크의 전반적인 내용들을 디테일하게 살펴보자 - JIHYUN KIM" property="og:title">
+<meta content="네트워크는 여러 개의 네트워크 기기를 기반으로 구축된다.
+계층별 네트워크 기기에는 아래와 같은 종류가 있다.
+애플리케이션 계층 : L7 스위치 인터넷 계층 : 라우터, L3 스위치 데이터 링크 계층 : L2 스위치, 브리지 물리 계층 : NIC, 리피터, AP 상위 계층의 네트워크 기기는 하위 계층을 처리할 수 있다.
+예를 들어 L7 스위치는 모든 계층을 처리할 수 있지만, AP는 물리 계층만 처리할 수 있다.
+네트워크 기기로 구성된 네트워크 위의 사진을 통해 네트워크가 어떻게 구성되어 있는지 살펴보자." property="og:description">
+<meta property="og:url" content="/posts/network-overall/" />
+<meta property="og:site_name" content="JIHYUN KIM" />
+
+<meta property="article:published_time" content="2022-11-05 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "headline": "네트워크의 전반적인 내용들을 디테일하게 살펴보자",
+    "genre": "",  
+    "url": "\/posts\/network-overall\/",
+    "datePublished": "2022-11-05 00:00:00 \u002b0000 UTC",
+    "description": "네트워크는 여러 개의 네트워크 기기를 기반으로 구축된다.\n계층별 네트워크 기기에는 아래와 같은 종류가 있다.\n애플리케이션 계층 : L7 스위치 인터넷 계층 : 라우터, L3 스위치 데이터 링크 계층 : L2 스위치, 브리지 물리 계층 : NIC, 리피터, AP 상위 계층의 네트워크 기기는 하위 계층을 처리할 수 있다.\n예를 들어 L7 스위치는 모든 계층을 처리할 수 있지만, AP는 물리 계층만 처리할 수 있다.\n네트워크 기기로 구성된 네트워크 위의 사진을 통해 네트워크가 어떻게 구성되어 있는지 살펴보자.",
+    "author": {
+        "@type": "Person",
+        "name": ""
+    }
+ }
+</script>
+
+
+
+
+<link rel="stylesheet" href="/sass/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/custom.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://yscriuf.github.io">JIHYUN KIM</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+        <li><a href="/pages/about/">About</a></li>
+        <li><a href="/pages/contact/">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a target="_blank" href="https://github.com/bul-ikana/hugo-cards">Project</a></li>
+            <li><a href="https://github.com/bul-ikana/hugo-cards.git">Download</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a target="_blank" href="https://themes.gohugo.io/">More Themes</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+    <div class="container">
+      <div class="wrapper">
+        
+<div class="row">
+<div class="col-md-8">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">네트워크의 전반적인 내용들을 디테일하게 살펴보자</h1>
+            <p class="post-meta"><time datetime='2022-11-05T00:00:00Z' itemprop="datePublished">November 5, 2022</time></p>
+                 
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            <p><strong>네트워크는 여러 개의 네트워크 기기를 기반</strong>으로 구축된다.<br>
+계층별 네트워크 기기에는 아래와 같은 종류가 있다.</p>
+<ul>
+<li>애플리케이션 계층 : L7 스위치</li>
+<li>인터넷 계층 : 라우터, L3 스위치</li>
+<li>데이터 링크 계층 : L2 스위치, 브리지</li>
+<li>물리 계층 : NIC, 리피터, AP</li>
+</ul>
+<p>상위 계층의 네트워크 기기는 하위 계층을 처리할 수 있다.<br>
+예를 들어 L7 스위치는 모든 계층을 처리할 수 있지만, AP는 물리 계층만 처리할 수 있다.</p>
+<h3 id="네트워크-기기로-구성된--네트워크">네트워크 기기로 구성된  네트워크</h3>
+<p><img src="%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%EA%B5%AC%EC%84%B1.png" alt="네트워크_구성"></p>
+<p>위의 사진을 통해 네트워크가 어떻게 구성되어 있는지 살펴보자.</p>
+<ul>
+<li>수 많은 라우터들끼리 연결되어 있다</li>
+<li>중심부에는 백본 또는 코어 라우터가 존재한다</li>
+<li>라우터는 스위치와 연결되어 있다</li>
+<li>스위치는 데스크톱, 노트북 등으로 연결된다</li>
+</ul>
+<p>반대로 생각해보면 우리가 사용하는 <strong>PC는 스위치</strong>에 연결되어 있고,<br>
+<strong>스위치는 라우터</strong>에, <strong>라우터는 라우터</strong>끼리 연결되어 있다는 것을 알 수 있다.</p>
+<p>그림에 나오는 장치들을 하나씩 살펴보자.</p>
+<blockquote>
+<p>[참조] 백본 망(backbone network)이란?<br>
+백본이란 등뼈 혹은 척수를 가르키는 용어이다.<br>
+네트워크에서 백본 망이란 중추 망을 뜻하는 용어이다.<br>
+코어 라우터라고 하는 고성능 라우터들이 연결되어 네트워크에서 중추적인 역할을 수행 하고 있다.</p>
+</blockquote>
+<br />
+<h3 id="라우터">라우터</h3>
+<p><img src="%EB%9D%BC%EC%9A%B0%ED%84%B0.png" alt="https://www.hyundaihds.com/brandsite/product/networkRouter.jsp"></p>
+<p><a href="https://www.hyundaihds.com/brandsite/product/networkRouter.jsp">https://www.hyundaihds.com/brandsite/product/networkRouter.jsp</a></p>
+<ul>
+<li>라우터는 여러 개의 네트워크를 연결, 분할, 구분시켜주는 역할을 한다.</li>
+<li>다른 네트워크와 통신할 때 패킷 소모를 최소화, 경로를 최적화하는 역할을 한다.</li>
+</ul>
+<br />
+<h3 id="스위치">스위치</h3>
+<p><img src="%EC%8A%A4%EC%9C%84%EC%B9%98.png" alt="https://www.hyundaihds.com/brandsite/product/networkL3.jsp"></p>
+<p><a href="https://www.hyundaihds.com/brandsite/product/networkL3.jsp">https://www.hyundaihds.com/brandsite/product/networkL3.jsp</a></p>
+<ul>
+<li>라우터가 외부와 통신할 수 있는 장치라면, 스위치는 내부 네트워크간 통신을 할 수 있다.</li>
+<li>네트워크 회선과 컴퓨터를 연결하는 역할을 한다</li>
+<li>허브는 10 Mbps의 속도를 나눠 쓴다면, 스위치는 각각 10 Mbps의 속도를 가진다.</li>
+<li>스위치에 연결된 장비의 주소를 기억해두고, 트래픽이 들어왔을 때 연결된 목적지로만 전달해주기 때문에 빠르다.</li>
+</ul>
+<br />
+<h3 id="l1-스위치">L1 스위치</h3>
+<ul>
+<li>L1 스위치는 <code>물리계층</code>에서 작동하는 네트워크 기기이다.</li>
+<li>위에서 잠깐 언급한 허브를 L1 스위치라고 한다.</li>
+<li>허브는 자신에게 꽂혀있는 모든 장비에게 데이터를 전부 전달한다.</li>
+</ul>
+<br />
+<h3 id="nic">NIC</h3>
+<ul>
+<li>NIC는 <code>물리계층</code>에서 작동하는 네트워크 기기이다.</li>
+<li>Network Interface Card의 줄인말</li>
+<li>랜카드로 흔히 불림</li>
+<li>각 랜카드에는 고유한 식별번호인 MAC 주소가 있다</li>
+</ul>
+<br />
+<h3 id="리피터">리피터</h3>
+<ul>
+<li>리피터는 <code>물리계층</code>에서 작동하는 네트워크 기기이다.</li>
+<li>들어오는 약해진 신호를 증폭하여 다른 쪽으로 전달하는 장치</li>
+<li>광케이블이 보급됨에 따라 잘 쓰이지 않는 장치</li>
+</ul>
+<br />
+<h3 id="ap">AP</h3>
+<ul>
+<li>AP는 <code>물리계층</code>에서 작동하는 네트워크 기기이다.</li>
+<li>AP는 패킷을 복사하는 기기이다</li>
+<li>유선 네트워크 → 무선 네트워크를 만들어주는 장치</li>
+</ul>
+<br />
+<h3 id="l2-스위치">L2 스위치</h3>
+<ul>
+<li>L2 스위치는 <code>데이터 링크 계층</code>에서 작동하는 네트워크 기기이다.</li>
+<li>스위칭 기능이 존재해 스위칭 허브라고 부르기도 한다.</li>
+<li>자신에게 꽂혀있는 장비의 MAC 주소를 기억하고 있다.</li>
+<li>트래픽이 들어왔을 때 목적지 MAC 주소를 찾아 전달해준다.</li>
+<li>간단한 구조와 신뢰성이 높고 성능이 좋다.</li>
+<li>Broadcast 패킷에 의해 성능 저하가 발생한다.</li>
+<li>라우팅이 불가능하고 상위 레이어 프로토콜을 이용한 스위칭이 불가능하다.</li>
+</ul>
+<blockquote>
+<p>[참고] Broadcast 패킷이란?<br>
+모든 네트워크 장비들에게 보내는 패킷이다.<br>
+공지사항을 위한 방송이라고 생각하면 된다.<br>
+ex) L2 스위치는 IP 주소를 이해하지 못하기 때문에, Broadcast를 통해 IP → MAC 주소를 찾아야 한다.</p>
+</blockquote>
+<br />
+<h3 id="브리지">브리지</h3>
+<ul>
+<li>브리지는 <code>데이터 링크 계층</code>에서 작동하는 네트워크 기기이다.</li>
+<li>두 개의 LAN을 상호 접속할 수 있도록 다리 역할을 하는 장치</li>
+<li>통신망 범위를 확장하고 서로 다른 LAN으로 이루어진 ‘하나의’ 통신망을 구축할 때 사용</li>
+</ul>
+<br />
+<h3 id="l3-스위치">L3 스위치</h3>
+<ul>
+<li>L3 스위치는 <code>네트워크 계층</code>을 처리하는 네트워크 기기이다</li>
+<li>L3 스위치는 MAC 주소뿐만 아니라 IP 주소까지 알고 있다.</li>
+<li>즉, L2 스위치에 라우팅 기능이 추가된 장비이다</li>
+<li>따라서 라우터라고 부르기도 한다.</li>
+<li>가정에서 많이 사용하는 공유기도 L3 기능과 WIFI 기능을 포함하고 있다.</li>
+</ul>
+<br />
+<h3 id="l4-스위치">L4 스위치</h3>
+<ul>
+<li>L4 스위치는 <code>전송 계층</code>을 처리하는 네트워크 기기이다</li>
+<li>외부에서 들어오는 모든 요청을 먼저 받아 들이는 계층</li>
+<li>요청을 받아 내부의 서버들에게 적절히 분산하는 역할</li>
+<li>스트리밍 서비스에서는 사용할 수 없음</li>
+<li>여러 대의 서버를 한 대처럼 묶을 수 있는 부하 분산(로드 밸런싱) 기능 제공</li>
+<li>IP 주소뿐만 아니라 Port 정보도 참고하고, 주로 포트를 기반으로 트래픽을 분산한다.</li>
+<li>L4 스위치를 이용한 로드 밸런싱은 NLB(Network Load Balancer)라고 한다</li>
+</ul>
+<br />
+<h3 id="l7-스위치">L7 스위치</h3>
+<ul>
+<li>L7 스위치는 <code>애플리케이션 계층</code>을 처리하는 네트워크 기기이다</li>
+<li>L7 스위치가 L5, L6 기능까지 같이 한다.</li>
+<li>IP와 포트 이외에도 URL, HTTP, 헤더, 쿠키를 기반으로 트래픽을 분산한다.</li>
+<li>바이러스, 불필요한 외부 데이터를 걸러내는 필터링이 있어 응용 프로그램 수준의 트래픽 모니터링도 가능하다</li>
+<li>정기적 헬스 체크를 이용해 장애가 발생한 서버를 트래픽 분산 대상에서 제외한다.</li>
+<li>L7 스위치를 이용한 로드 밸런싱은 ALB(Application Load Balancer)라고 한다</li>
+</ul>
+<br />
+<h3 id="헬스-체크">헬스 체크</h3>
+<ul>
+<li>L4, L7 스위치 모두 헬스 체크를 통해 비정상적인 서버를 검출한다.</li>
+<li>TCP, HTTP 등 다양한 방법으로 요청을 보내며 정상적인 응답을 받는다면 정상으로 판별한다.</li>
+</ul>
+<br />
+<h3 id="로드밸런서">로드밸런서</h3>
+<p><img src="%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C.png" alt="https://www.cloudv.kr/etc/lb.html"></p>
+<p><a href="https://www.cloudv.kr/etc/lb.html">https://www.cloudv.kr/etc/lb.html</a></p>
+<ul>
+<li>서비스를 안정적으로 운용하기 위해서는 2대 이상의 서버는 필수다.</li>
+<li>에러가 발생하여 1대의 서버가 종료되더라도 서비스는 안정적으로 운용되어야 하기 때문이다.</li>
+<li>로드밸런서는 평소에는 부하 분산을 위해 사용된다.</li>
+<li>헬스체크를 통해 서버에 장애가 발생했다고 파악이 되면, 로드밸런서는 해당 서버로 접근을 막아버린다.</li>
+</ul>
+<br />
+<h2 id="참조">참조</h2>
+<ul>
+<li>면접을 위한 CS 전공지식 노트 서적</li>
+<li><a href="https://siahn95.tistory.com/entry/Network%EC%9E%A5%EB%B9%84-L1-L2-L3-L4-L5-L6-L7-%EC%8A%A4%EC%9C%84%EC%B9%98%EB%9E%80">https://siahn95.tistory.com/entry/Network장비-L1-L2-L3-L4-L5-L6-L7-스위치란</a></li>
+<li><a href="https://jaejin0me.github.io/post/posts131/">https://jaejin0me.github.io/post/posts131/</a></li>
+<li><a href="http://wiki.hash.kr/index.php/L2_%EC%8A%A4%EC%9C%84%EC%B9%98#cite_ref-.ED.8B.B0.EC.8A.A4.ED.86.A0.EB.A6.AC_3-2">http://wiki.hash.kr/index.php/L2_스위치#cite_ref-.ED.8B.B0.EC.8A.A4.ED.86.A0.EB.A6.AC_3-2</a></li>
+<li><a href="https://startingpitcher.tistory.com/8">https://startingpitcher.tistory.com/8</a></li>
+<li><a href="https://www.cloudv.kr/etc/lb.html">https://www.cloudv.kr/etc/lb.html</a></li>
+</ul>
+<hr>
+<h1 id="질문">질문</h1>
+<ul>
+<li>미국의 구글에서 보낸 패킷이 어떤 과정으로 내 PC에 전달되는지 설명하시오.</li>
+<li>어떤 상황에 ALB와 NLB를 사용하는지 각각 설명하시오.</li>
+<li>동일한 MAC 주소는 존재할 수 있는가?</li>
+<li>동일한 MAC이 존재한다면 어떤 혼란이 발생하고, 어떻게 해결할 수 있는가?</li>
+<li>헬스 체크의 빈도로 적당한 시간은?</li>
+</ul>
+
+          </div>
+
+    </article>
+    <div class="row">
+        
+         
+<div id="disqus_thread"></div>
+<script defer>
+(function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//yscriuf.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        
+    </div>
+    
+    <div class="row">
+            <ul class="pager">
+             
+              
+                <li><a class="previous" href="/posts/welcome-to-hugo/">Welcome to Hugox! &raquo;</a></li>
+              
+            </ul>
+    </div>
+</div>
+
+
+<div class="col-md-4 mt20">
+        <div class="post-img">
+            
+            
+              
+                <img width="100%" src="/posts/network-overall/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%EA%B5%AC%EC%84%B1.png" alt="네트워크_구성.png">
+              
+            
+            
+        </div>
+            
+        
+        <div class="mt10 recent">
+            <h2>Recent articles</h2>        
+             <ul>
+                
+
+                      <li>
+                      <p><a href="/posts/network-overall/">네트워크의 전반적인 내용들을 디테일하게 살펴보자</a><small>&nbsp;&nbsp;November 5, 2022</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="/posts/welcome-to-hugo/">Welcome to Hugox!</a><small>&nbsp;&nbsp;June 13, 2016</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="/posts/usage/">Usage Guide</a><small>&nbsp;&nbsp;June 12, 2016</small></p>
+                      </li>
+
+                
+              </ul>
+        </div>
+        
+        <br>
+
+</div>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer>
+    <div class="container">
+        <div class="row p20">
+            
+                <div class="col-md-4 text-center mt25">All rights reserved by <a target="_blank" href="https://hyun222.tistory.com/">JIHYUN KIM</a></div>
+            
+
+            <div class="col-md-4 text-center mt25" >
+                
+                <a target="_blank" href="https://bool.netlify.com"><img src="https://img.shields.io/badge/Built%20by-bool-brightgreen.svg" alt="JIHYUN KIM"></a>
+                
+            </div>
+            <div class="col-md-4 text-center mt25">
+               
+               
+               
+                <a target="_blank" href="http://twitter.com/bul_ikana"><li class="social twitter"><i class="fa fa-twitter-square"></i></li></a>
+                
+               
+                <a target="_blank" href="https://github.com/JirongKim"><li class="social github"><i class="fa fa-github-square"></i></li></a>
+                
+               
+                <a target="_blank" href="mailto:jhkim0254@gmail.com"><li class="social email"><i class="fa fa-envelope"></i></li></a>
+                
+            </div>
+
+        </div> 
+    </div>
+</footer>
+    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://yscriuf.github.io/js/bootstrap.min.js"></script>
+   
+    
+ 
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+  </body>
+
+</html>
