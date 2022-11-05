@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>네트워크 on JIHYUN KIM</title>
+    <link>/tags/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/</link>
+    <description>Recent content in 네트워크 on JIHYUN KIM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>네트워크 기기를 통해 알아보는 네트워크</title>
+      <link>/posts/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B8%B0%EA%B8%B0%EB%A5%BC-%ED%86%B5%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/</link>
+      <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B8%B0%EA%B8%B0%EB%A5%BC-%ED%86%B5%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/</guid>
+      <description>네트워크는 여러 개의 네트워크 기기를 기반으로 구축된다.
+계층별 네트워크 기기에는 아래와 같은 종류가 있다.
+애플리케이션 계층 : L7 스위치 인터넷 계층 : 라우터, L3 스위치 데이터 링크 계층 : L2 스위치, 브리지 물리 계층 : NIC, 리피터, AP 상위 계층의 네트워크 기기는 하위 계층을 처리할 수 있다.
+예를 들어 L7 스위치는 모든 계층을 처리할 수 있지만, AP는 물리 계층만 처리할 수 있다.
+네트워크 기기로 구성된 네트워크 위의 사진을 통해 네트워크가 어떻게 구성되어 있는지 살펴보자.</description>
+    </item>
+    
+  </channel>
+</rss>
