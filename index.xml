@@ -6,7 +6,16 @@
     <description>Recent content on JIHYUN KIM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Nov 2022 17:30:24 +0900</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 23:31:14 +0900</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nCloud로 내 프로젝트 배포하기(Node.js)</title>
+      <link>/posts/ncloud-basic/</link>
+      <pubDate>Mon, 07 Nov 2022 23:31:14 +0900</pubDate>
+      
+      <guid>/posts/ncloud-basic/</guid>
+      <description>nCloud를 처음 접하는 사람을 대상으로 작성한 글입니다. Micro 서버를 이용하여 무료로 서비스를 배포하고 싶은 사람에게 유용한 글입니다.</description>
+    </item>
+    
     <item>
       <title>네트워크의 전반적인 내용을 살펴보자</title>
       <link>/posts/network-overall/</link>
